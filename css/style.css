@@ -1,0 +1,106 @@
+body {
+  background: #24475b;
+  color: #f2f2f2;
+  transition: 0.5s;
+}
+
+body.active {
+  background: radial-gradient(
+    circle,
+    rgba(156, 213, 184, 1) 20%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container {
+  width: 1173px;
+  margin: 0 auto;
+  margin-top: 250px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer__block {
+  margin-right: 19px;
+  padding: 16px 30px;
+  background: #1baa76;
+  border-radius: 7px;
+}
+
+.timer__block.active {
+  background: #24475b;
+}
+
+.timer__count {
+  font-weight: 400;
+  font-size: 98px;
+  line-height: 110px;
+}
+
+#toggle {
+  margin-top: 30px;
+  margin-right: 30px;
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 40px;
+  border-radius: 40px;
+  background: #1d3949;
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+    inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#toggle.active {
+  background: rgb(92, 142, 199);
+  box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+    inset 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.05);
+}
+
+#toggle .indikator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(to bottom, #444, #24475b);
+  border-radius: 50%;
+  transform: scale(0.9);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+    inset 0 4px 4px rgba(255, 255, 255, 0.2),
+    inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+}
+
+#toggle.active .indikator {
+  left: 40px;
+  background: linear-gradient(
+    to bottom,
+    rgba(148, 187, 233, 1),
+    rgb(139, 197, 167)
+  );
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
+    inset 0 4px 4px rgba(255, 255, 255, 1),
+    inset 0 -4px 4px rgba(255, 255, 255, 1);
+}
+
+.happyB {
+  font-family: "Pacifico", cursive;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #ffb344;
+  font-weight: 400;
+  font-size: 86px;
+  line-height: 151px;
+}
