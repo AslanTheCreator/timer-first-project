@@ -18,20 +18,35 @@ body.active {
   align-items: center;
 }
 
-.container {
+.cont {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* [class*="__container"] {
   width: 1173px;
   margin: 0 auto;
-  margin-top: 250px;
+} */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
 }
 
 .timer {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 19px;
 }
 
 .timer__block {
-  margin-right: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 16px 30px;
   background: #1baa76;
   border-radius: 7px;
@@ -99,8 +114,35 @@ body.active {
   display: none;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: #ffb344;
   font-weight: 400;
   font-size: 86px;
   line-height: 151px;
+}
+
+@media (max-width: 767.98px) {
+  .main {
+    padding-top: 35px;
+  }
+  .timer {
+    flex-direction: column;
+  }
+  .timer__count {
+    font-size: 58px;
+    line-height: 80px;
+  }
+  .timer__title {
+    font-size: 14px;
+  }
+  .happyB {
+    font-size: 60px;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .happyB {
+    font-size: 50px;
+  }
 }
