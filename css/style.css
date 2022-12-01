@@ -18,16 +18,6 @@ body.active {
   align-items: center;
 }
 
-.cont {
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* [class*="__container"] {
-  width: 1173px;
-  margin: 0 auto;
-} */
-
 .main {
   display: flex;
   justify-content: center;
